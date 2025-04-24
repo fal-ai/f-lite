@@ -1,0 +1,99 @@
+{
+  "id": "465af7e5-d996-4ae9-960f-92df68613f51",
+  "revision": 0,
+  "last_node_id": 13,
+  "last_link_id": 15,
+  "nodes": [
+    {
+      "id": 2,
+      "type": "PreviewImage",
+      "pos": [
+        531.4461059570312,
+        590.7017822265625
+      ],
+      "size": [
+        710.598388671875,
+        626.894287109375
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 2
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 3,
+      "type": "F-Lite",
+      "pos": [
+        107.80059814453125,
+        593.9559326171875
+      ],
+      "size": [
+        400,
+        406
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "F-Lite"
+      },
+      "widgets_values": [
+        "F-Lite",
+        "A photorealistic 3D render of a charming, mischievous young boy, approximately eight years old, possessing the endearingly unusual features of long, floppy donkey ears that droop playfully over his shoulders and a surprisingly small, pink pig nose that twitches slightly.  His eyes, a sparkling, intelligent hazel, are wide with a hint of playful mischief, framed by slightly unruly, sandy-brown hair that falls in tousled waves across his forehead.  He's dressed in a simple, slightly oversized, worn denim shirt and patched-up corduroy trousers, hinting at a life spent playing outdoors. The lighting is soft and natural, casting gentle shadows that highlight the texture of his skin – slightly freckled and sun-kissed, suggesting time spent in the sun.  His expression is one of curious anticipation, his lips slightly parted as if he's about to speak or perhaps is listening intently. The background is a subtly blurred pastoral scene, perhaps a sun-dappled meadow with wildflowers, enhancing the overall whimsical and slightly surreal nature of the character.  The overall style aims for a blend of realistic rendering with a touch of whimsical cartoonishness, capturing the unique juxtaposition of the boy's human features and his animalistic ears and nose.",
+        "",
+        0,
+        "fixed",
+        6,
+        1,
+        30,
+        1024,
+        1024,
+        false,
+        true
+      ]
+    }
+  ],
+  "links": [
+    [
+      2,
+      3,
+      0,
+      2,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6520500882476983,
+      "offset": [
+        1008.7564917956526,
+        -405.1849458988666
+      ]
+    }
+  },
+  "version": 0.4
+}

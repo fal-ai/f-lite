@@ -1,0 +1,11 @@
+diffusers
+einops
+jsonargparse
+peft
+pandas
+protobuf
+rich
+sentencepiece
+torch
+torchvision
+transformers

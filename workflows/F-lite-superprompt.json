@@ -1,0 +1,201 @@
+{
+  "id": "465af7e5-d996-4ae9-960f-92df68613f51",
+  "revision": 0,
+  "last_node_id": 13,
+  "last_link_id": 14,
+  "nodes": [
+    {
+      "id": 2,
+      "type": "PreviewImage",
+      "pos": [
+        531.4461059570312,
+        590.7017822265625
+      ],
+      "size": [
+        710.598388671875,
+        626.894287109375
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 2
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 13,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -303.20068359375,
+        845.6998901367188
+      ],
+      "size": [
+        396.2967834472656,
+        209.1581573486328
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 13
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": [
+            14
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        " A majestic parrot with a long, curved beak and a curved tusk sits on a rocky outcrop, surrounded by lush greenery. The sun is setting, casting a warm orange glow on the parrot's fur. The air is filled with the sweet scent of blooming flowers, and a gentle breeze rustles the leaves of nearby trees. The parrot's eyes are closed, and its tongue lolls out of its mouth as it listens intently to the sounds of the forest."
+      ]
+    },
+    {
+      "id": 7,
+      "type": "Superprompt",
+      "pos": [
+        -308.32763671875,
+        595.873046875
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            13
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Superprompt"
+      },
+      "widgets_values": [
+        "Expand the following prompt to add more detail: ",
+        "A parrot",
+        512
+      ]
+    },
+    {
+      "id": 3,
+      "type": "F-Lite",
+      "pos": [
+        107.80059814453125,
+        593.9559326171875
+      ],
+      "size": [
+        400,
+        400
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 14
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "F-Lite"
+      },
+      "widgets_values": [
+        "F-Lite",
+        "A happy birthday card inspired in the summer for Alejandro",
+        "",
+        4487,
+        "fixed",
+        6,
+        1,
+        30,
+        1024,
+        1024,
+        false,
+        true
+      ]
+    }
+  ],
+  "links": [
+    [
+      2,
+      3,
+      0,
+      2,
+      0,
+      "IMAGE"
+    ],
+    [
+      13,
+      7,
+      0,
+      13,
+      0,
+      "STRING"
+    ],
+    [
+      14,
+      13,
+      0,
+      3,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6520500882476983,
+      "offset": [
+        1008.7564917956526,
+        -406.7365425756171
+      ]
+    }
+  },
+  "version": 0.4
+}
