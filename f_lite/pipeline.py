@@ -164,6 +164,7 @@ class FLitePipeline(DiffusionPipeline):
         num_inference_steps: int = 30,
         guidance_scale: float = 3.0,
         negative_prompt: Optional[Union[str, List[str]]] = None,
+        num_images_per_prompt: int = 1,
         generator: Optional[Union[torch.Generator, List[torch.Generator]]] = None,
         dtype: Optional[torch.dtype] = None,
         alpha: Optional[float] = None,
@@ -171,7 +172,6 @@ class FLitePipeline(DiffusionPipeline):
         **kwargs,
     ):
         """Generate images from text prompt."""
-        batch_size = 1  # TODO: Make this method support batch generation
         # Ensure height and width are not None for calculation
         if height is None:
             height = 1024
@@ -184,9 +184,17 @@ class FLitePipeline(DiffusionPipeline):
         device = self._execution_device
 
         # 2. Encode prompts
+        prompt_batch_size = len(prompt) if isinstance(prompt, list) else 1
+        batch_size = prompt_batch_size * num_images_per_prompt
+
         prompt_embeds, negative_embeds = self.encode_prompt(
-            prompt=prompt, negative_prompt=negative_prompt, device=self.text_encoder.device, dtype=dtype
+            prompt=prompt, negative_prompt=negative_prompt, device=self.text_encoder.device, dtype=dtype,
+            return_index=self.return_index,
         )
+
+        # Repeat embeddings for num_images_per_prompt
+        prompt_embeds = prompt_embeds.repeat_interleave(num_images_per_prompt, dim=0)
+        negative_embeds = negative_embeds.repeat_interleave(num_images_per_prompt, dim=0)
 
         # 3. Initialize latents
         latent_height = height // self.vae_scale_factor
