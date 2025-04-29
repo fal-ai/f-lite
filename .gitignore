@@ -1,0 +1,13 @@
+temp.pt
+checkpoints/*
+checkpoints_merged/*
+launch.json
+wandb/*
+__pycache__
+~
+logs
+/debug
+/tmp
+.env
+.venv
+.vscode
