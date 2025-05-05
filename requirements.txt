@@ -9,3 +9,4 @@ sentencepiece
 torch
 torchvision
 transformers
+gradio
