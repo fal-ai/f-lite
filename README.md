@@ -55,7 +55,7 @@ This workflow is **recommended** as F Lite works significantly better with detai
 #### Requirements
 
 This workflow requires the following ComfyUI extensions:
-- [ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes) - Provides the `Superprompt` node for prompt expansion
+- [ComfyUI-Custom-Scripts](https://github.com/kijai/ComfyUI-KJNodes) - Provides the `Superprompt` node for prompt expansion
 - [ComfyUI-Custom-Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts) - Provides the `ShowText` node for text visualization
 
 To install these extensions:
@@ -133,6 +133,24 @@ Using [negative prompts](NEGATIVE_PROMPT.md) can help improve the quality of the
 ## Fine-tuning and LoRAs
 
 It is possible to fine-tune F Lite using your own data. Read the [Fine-tuning](FINE-TUNING.md) documentation for more information.
+
+## Graphical User Interface
+
+f-lite includes a Gradio-based GUI that provides an intuitive interface for image generation. 
+
+![image](https://github.com/user-attachments/assets/508dabbb-f443-41e4-932f-4f6696123c9e)
+
+## Launching Gradio GUI
+
+```
+python f-lite-gradio-gui.py
+```
+
+### Gradio GUI Features
+- Basic parameter configuration
+- Preset resolutions for common aspect ratios (square, portrait, landscape)
+- Continuous generation mode with random seed iteration
+- Dynamic prompt enhancement with wildcard support (`{option1|option2|option3}` syntax, as well as `__filename__` for .txt-file wildcards)
 
 ## Acknowledgements
 
