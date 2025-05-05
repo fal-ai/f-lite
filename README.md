@@ -55,7 +55,7 @@ This workflow is **recommended** as F Lite works significantly better with detai
 #### Requirements
 
 This workflow requires the following ComfyUI extensions:
-- [ComfyUI-Custom-Scripts](https://github.com/kijai/ComfyUI-KJNodes) - Provides the `Superprompt` node for prompt expansion
+- [ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes) - Provides the `Superprompt` node for prompt expansion
 - [ComfyUI-Custom-Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts) - Provides the `ShowText` node for text visualization
 
 To install these extensions:
