@@ -407,7 +407,7 @@ def generate(
     finally:
         # Always reset UI state when finished or cancelled
         print("Generation finished or cancelled, resetting UI")
-        yield gr.update(), gr.update(visible=True), gr.update(visible=True), gr.update(visible=False), gr.update()
+        yield (starting_image if image is None else image), gr.update(visible=True), gr.update(visible=True), gr.update(visible=False), gr.update()
 
 def set_resolution(res):
     return gr.update(value=res[0]), gr.update(value=res[1])
