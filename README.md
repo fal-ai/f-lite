@@ -138,7 +138,7 @@ It is possible to fine-tune F Lite using your own data. Read the [Fine-tuning](F
 
 f-lite includes a Gradio-based GUI that provides an intuitive interface for image generation. 
 
-![image](https://github.com/user-attachments/assets/508dabbb-f443-41e4-932f-4f6696123c9e)
+![image](https://github.com/user-attachments/assets/23a6bf06-3978-491e-be8f-7c9db2f13a39)
 
 ## Launching Gradio GUI
 
