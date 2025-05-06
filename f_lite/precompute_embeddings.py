@@ -10,9 +10,9 @@ import os
 import torch
 
 # Import the pipeline and dataset class from your training script
-from pipeline import FLitePipeline  # Adjust import as needed
+from f_lite.pipeline import FLitePipeline  # Adjust import as needed
 from tqdm.auto import tqdm
-from train import DiffusionDataset, encode_prompt_with_t5  # Reusing your dataset class
+from f_lite.train import DiffusionDataset, encode_prompt_with_t5  # Reusing your dataset class
 
 
 def parse_args():

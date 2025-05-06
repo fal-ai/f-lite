@@ -230,7 +230,7 @@ For extremely memory-constrained scenarios, you can use precomputation to signif
 First, run the precomputation script to process your dataset:
 
 ```bash
-python precompute_embeddings.py \
+python -m f_lite.precompute_embeddings \
   --pretrained_model_path ./pretrained_models/dit_model \
   --data_path ./data/train_data.csv \
   --base_image_dir ./data/images \
