@@ -138,7 +138,8 @@ It is possible to fine-tune F Lite using your own data. Read the [Fine-tuning](F
 
 f-lite includes a Gradio-based GUI that provides an intuitive interface for image generation. 
 
-![image](https://github.com/user-attachments/assets/23a6bf06-3978-491e-be8f-7c9db2f13a39)
+![image](https://github.com/user-attachments/assets/3df36bdc-b2ea-4c10-a7a9-88eccd7548d5)
+
 
 ## Launching Gradio GUI
 
@@ -148,9 +149,13 @@ python f-lite-gradio-gui.py
 
 ### Gradio GUI Features
 - Basic parameter configuration
+- Augmented Parallel Guidance for more consistent  results
 - Preset resolutions for common aspect ratios (square, portrait, landscape)
 - Continuous generation mode with random seed iteration
 - Dynamic prompt enhancement with wildcard support (`{option1|option2|option3}` syntax, as well as `__filename__` for .txt-file wildcards)
+- Enhanced prompts using [SuperPrompt](https://huggingface.co/roborovski/superprompt-v1)
+- Controls for randomization with SuperPrompt and wildcards while using fixed seeds
+- Prompt prefix / suffix
 
 ## Acknowledgements
 
