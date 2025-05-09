@@ -30,7 +30,7 @@ class FLiteNode:
 
     @classmethod
     def INPUT_TYPES(self):
-        model_list =['F-Lite', 'F-Lite-Texture']
+        model_list = ['F-Lite', 'F-Lite-Texture', 'F-Lite-7B']
         default_prompt = "A photorealistic 3D render of a charming, mischievous young boy, approximately eight years old, possessing the endearingly unusual features of long, floppy donkey ears that droop playfully over his shoulders and a surprisingly small, pink pig nose that twitches slightly.  His eyes, a sparkling, intelligent hazel, are wide with a hint of playful mischief, framed by slightly unruly, sandy-brown hair that falls in tousled waves across his forehead.  He's dressed in a simple, slightly oversized, worn denim shirt and patched-up corduroy trousers, hinting at a life spent playing outdoors. The lighting is soft and natural, casting gentle shadows that highlight the texture of his skin – slightly freckled and sun-kissed, suggesting time spent in the sun.  His expression is one of curious anticipation, his lips slightly parted as if he's about to speak or perhaps is listening intently. The background is a subtly blurred pastoral scene, perhaps a sun-dappled meadow with wildflowers, enhancing the overall whimsical and slightly surreal nature of the character.  The overall style aims for a blend of realistic rendering with a touch of whimsical cartoonishness, capturing the unique juxtaposition of the boy's human features and his animalistic ears and nose."
         default_negative_prompt = ""
         return {

@@ -10,9 +10,11 @@
 
 <a href="https://huggingface.co/spaces/Freepik/F-Lite"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Demo&color=orange"></a> &ensp;
 <a href="https://huggingface.co/spaces/Freepik/F-Lite-Texture"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Texture%20Demo&color=orange"></a> &ensp;
+<a href="https://huggingface.co/spaces/Freepik/F-Lite-7B"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=7B%20Demo&color=orange"></a> &ensp;
 <a href="#comfyui-nodes"><img src="https://img.shields.io/static/v1?label=%E2%9A%99%EF%B8%8F%20ComfyUI&message=Node&color=purple"></a> &ensp;
-<a href="https://huggingface.co/Freepik/F-Lite"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%96%20Released&message=Model&color=green"></a> &ensp;
-<a href="https://huggingface.co/Freepik/F-Lite-Texture"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%96%20Released&message=Texture%20Model&color=green"></a> &ensp;
+<a href="https://huggingface.co/Freepik/F-Lite"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%96%20Released&message=F%20Lite&color=green"></a> &ensp;
+<a href="https://huggingface.co/Freepik/F-Lite-Texture"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%96%20Released&message=F%20Lite%20Texture&color=green"></a> &ensp;
+<a href="https://huggingface.co/Freepik/F-Lite-7B"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%96%20Released&message=F%20Lite%207B&color=green"></a> &ensp;
 <a href="assets/F Lite Technical Report.pdf"><img src="https://img.shields.io/static/v1?label=%F0%9F%93%84%20Technical&message=Report&color=darkred&logo=pdf"></a> &ensp;
 
 </div>
@@ -21,13 +23,14 @@
   <img src="assets/output_tight_mosaic.jpeg" alt="F Lite generated images mosaic" width="100%">
 </p>
 
-F Lite is a 10B parameter diffusion model created by [Freepik](https://www.freepik.com) and [Fal](https://fal.ai), trained exclusively on copyright-safe and SFW content. The model was trained on Freepik's internal dataset comprising approximately 80 million copyright-safe images, making it the first publicly available model of this scale trained exclusively on legally compliant and SFW content.
+F Lite is a family of 10B and 7B parameter diffusion models created by [Freepik](https://www.freepik.com) and [Fal](https://fal.ai), trained exclusively on copyright-safe and SFW content. The models were trained on Freepik's internal dataset comprising approximately 80 million copyright-safe images, making them the first publicly available models of this scale trained exclusively on legally compliant and SFW content.
 
 Read our [technical report](assets/F%20Lite%20Technical%20Report.pdf) for more details about the architecture and training process.
 
 ## Project updates
 
-* 🎉 **April 29, 2025**: F Lite is released!
+* 🎉 **May, 9, 2025**: F Lite 7B is released!
+* **April 29, 2025**: F Lite is released!
 
 ## Weights
 
@@ -36,6 +39,7 @@ Read our [technical report](assets/F%20Lite%20Technical%20Report.pdf) for more d
 |---------------|------|-------------|-------|---------|------------|
 | **Standard Model** | [Freepik/F-Lite](https://huggingface.co/Freepik/F-Lite) | Base model suitable for general-purpose image generation | - | [Demo](https://huggingface.co/spaces/Freepik/F-Lite) | [Fal.ai Demo](https://fal.ai/models/fal-ai/f-lite/standard) |
 | **Texture Model** | [Freepik/F-Lite-Texture](https://huggingface.co/Freepik/F-Lite-Texture) | Specialized version with richer textures and enhanced details | • Requires more detailed prompts<br>• May be more prone to malformations<br>• Less effective for vector-style imagery | [Demo](https://huggingface.co/spaces/Freepik/F-Lite-Texture) | [Fal.ai Demo](https://fal.ai/models/fal-ai/f-lite/texture) |
+| **Standard 7B** | [Freepik/F-Lite-7B](https://huggingface.co/Freepik/F-Lite-7B) | 7B parameter version of the standard model | • Lower VRAM requirement | [Demo](https://huggingface.co/spaces/Freepik/F-Lite-7B) | [Fal.ai Demo](https://fal.ai/models/fal-ai/f-lite/7b) |
 
 ## ComfyUI Nodes
 
