@@ -144,7 +144,7 @@ f-lite includes a Gradio-based GUI that provides an intuitive interface for imag
 ## Launching Gradio GUI
 
 ```
-python f-lite-gradio-gui.py
+python f_lite_gradio_gui.py
 ```
 
 ### Gradio GUI Features
