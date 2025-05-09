@@ -69,8 +69,8 @@ def get_superprompt_components():
 
 # --- Dropdown resolutions ---
 PRESET_RESOLUTIONS = [
-    {"name": "[Square] 768×768 (1:1)",    "width": 768,  "height": 768},
     {"name": "[Square] 1024×1024 (1:1)",    "width": 1024,  "height": 1024},
+    {"name": "[Square] 1280x1280 (1:1)",    "width": 1280,  "height": 1280},
     {"name": "[Square] 1536×1536 (1:1)",    "width": 1536,  "height": 1536},
     {"name": "[Portrait] 544×960 (9:16)",   "width": 544,  "height": 960},
     {"name": "[Portrait] 832×1248 (2:3)",  "width": 832,  "height": 1248},
