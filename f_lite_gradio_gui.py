@@ -70,14 +70,16 @@ def get_superprompt_components():
 # --- Dropdown resolutions ---
 PRESET_RESOLUTIONS = [
     {"name": "[Square] 1024×1024 (1:1)",    "width": 1024,  "height": 1024},
-    {"name": "[Square] 1280x1280 (1:1)",    "width": 1280,  "height": 1280},
+    {"name": "[Square] 1216×1216 (1:1)",    "width": 1216, "height": 1216},
     {"name": "[Square] 1536×1536 (1:1)",    "width": 1536,  "height": 1536},
-    {"name": "[Portrait] 544×960 (9:16)",   "width": 544,  "height": 960},
-    {"name": "[Portrait] 832×1248 (2:3)",  "width": 832,  "height": 1248},
-    {"name": "[Portrait] 864×1536 (9:16)",   "width": 864, "height": 1536},
-    {"name": "[Landscape] 960×544 (16:9)",   "width": 960,  "height": 544},
+    {"name": "[Portrait] 640×960 (2:3)",    "width": 640, "height": 960},
+    {"name": "[Portrait] 832×1248 (2:3)",   "width": 832, "height": 1248},
+    {"name": "[Portrait] 864×1536 (9:16)",  "width": 864, "height": 1536},
+    {"name": "[Portrait] 896×1600 (14:25)", "width": 896, "height": 1600},
+    {"name": "[Landscape] 960×640 (3:2)",   "width": 960,  "height": 640},
     {"name": "[Landscape] 1248×832 (3:2)",  "width": 1248, "height": 832},
-    {"name": "[Landscape] 1536×864 (16:9)",   "width": 1536, "height": 864},
+    {"name": "[Landscape] 1536×864 (16:9)", "width": 1536, "height": 864},
+    {"name": "[Landscape] 1600×896 (25:14)","width": 1600, "height": 896},
 ]
 
 LAST_GENERATED_IMAGE_PATH = None
