@@ -777,7 +777,7 @@ def build_interface():
                             info="The threshold for the orthogonal guidance"
                         )
                 model = gr.Dropdown(
-                    choices=["Freepik/F-Lite", "Freepik/F-Lite-Texture"],
+                    choices=["Freepik/F-Lite", "Freepik/F-Lite-Texture", "Freepik/F-Lite-7B"],
                     label="Model",
                     value="Freepik/F-Lite",
                     elem_id="model-dropdown"
