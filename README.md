@@ -43,7 +43,14 @@ Read our [technical report](assets/F%20Lite%20Technical%20Report.pdf) for more d
 
 ## ComfyUI Nodes
 
-F Lite can be used within ComfyUI for a more visual workflow experience. Two example workflows are provided:
+F Lite can be used within ComfyUI for a more visual workflow experience. Install it into Comfy `custom_nodes` folder:
+
+```
+cd [your ComfyUI folder]/custom_nodes
+git clone https://github.com/fal-ai/f-lite.git
+```
+
+Two example workflows are provided:
 
 ### Simple Workflow (F-lite-simple.json)
 
