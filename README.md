@@ -50,6 +50,15 @@ cd [your ComfyUI folder]/custom_nodes
 git clone https://github.com/fal-ai/f-lite.git
 ```
 
+You'll also need to install its dependencies, typically:
+
+```
+cd [your ComfyUI folder]/custom_nodes/f-lite
+pip install -r requirements.txt
+```
+
+Check [how to install ComfyUI plugin requirements](https://comfyui-wiki.com/en/install/install-custom-nodes#vi-installing-dependencies-for-comfyui-custom-nodes) if you have doubts.
+
 Two example workflows are provided:
 
 ### Simple Workflow (F-lite-simple.json)
