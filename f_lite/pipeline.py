@@ -188,7 +188,7 @@ class FLitePipeline(DiffusionPipeline):
         batch_size = prompt_batch_size * num_images_per_prompt
 
         prompt_embeds, negative_embeds = self.encode_prompt(
-            prompt=prompt, negative_prompt=negative_prompt, device=self.text_encoder.device, dtype=dtype,
+            prompt=prompt, negative_prompt=negative_prompt, device=device, dtype=dtype,
             return_index=self.return_index,
         )
 
